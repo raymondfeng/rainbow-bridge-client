@@ -9,6 +9,7 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.15.1",
     "@typescript-eslint/parser": "^4.15.1",
+    "@yarnpkg/pnpify": "^2.4.0",
     "eslint": "^7.20.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-import-resolver-node": "^0.3.4",
@@ -27,8 +28,5 @@
   },
   "workspaces": [
     "packages/*"
-  ],
-  "resolutions": {
-    "@near~eth/client": "portal:/Users/chadoh/code/r/client/packages/client"
-  }
+  ]
 }

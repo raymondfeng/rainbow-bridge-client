@@ -49,6 +49,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@typescript-eslint/eslint-plugin", "virtual:1c6a0feca60af4e6dc553e6f5226614cd69d6d43f7d8c95e9257c797f57e180cc83210d82b05d9978274cb95176414a0b979cb347a75da78fb43ee1e3a86f7b2#npm:4.15.1"],
             ["@typescript-eslint/parser", "virtual:1c6a0feca60af4e6dc553e6f5226614cd69d6d43f7d8c95e9257c797f57e180cc83210d82b05d9978274cb95176414a0b979cb347a75da78fb43ee1e3a86f7b2#npm:4.15.1"],
+            ["@yarnpkg/pnpify", "virtual:1c6a0feca60af4e6dc553e6f5226614cd69d6d43f7d8c95e9257c797f57e180cc83210d82b05d9978274cb95176414a0b979cb347a75da78fb43ee1e3a86f7b2#npm:2.4.0"],
             ["eslint", "npm:7.20.0"],
             ["eslint-config-standard", "virtual:1c6a0feca60af4e6dc553e6f5226614cd69d6d43f7d8c95e9257c797f57e180cc83210d82b05d9978274cb95176414a0b979cb347a75da78fb43ee1e3a86f7b2#npm:16.0.2"],
             ["eslint-import-resolver-node", "npm:0.3.4"],
@@ -558,18 +559,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@near~eth/client", [
-        ["portal:/Users/chadoh/code/r/client/packages/client::locator=rainbow-bridge-lib-monorepo%40workspace%3A.", {
-          "packageLocation": "./packages/client/",
-          "packageDependencies": [
-            ["@near~eth/client", "portal:/Users/chadoh/code/r/client/packages/client::locator=rainbow-bridge-lib-monorepo%40workspace%3A."],
-            ["@types/bn.js", "npm:5.1.0"],
-            ["@types/node", "npm:14.14.28"],
-            ["bn.js", "npm:5.1.3"],
-            ["near-api-js", "https://github.com/near/near-api-js.git#commit=063981f288043fb694b1dceb5fb36b893d4e2b78"],
-            ["typescript", "patch:typescript@npm%3A4.1.5#builtin<compat/typescript>::version=4.1.5&hash=cc6730"]
-          ],
-          "linkType": "SOFT",
-        }],
         ["workspace:packages/client", {
           "packageLocation": "./packages/client/",
           "packageDependencies": [
@@ -591,7 +580,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/cli", "npm:12.0.0"],
             ["@commitlint/config-conventional", "npm:12.0.0"],
             ["@commitlint/travis-cli", "npm:12.0.0"],
-            ["@near~eth/client", "portal:/Users/chadoh/code/r/client/packages/client::locator=rainbow-bridge-lib-monorepo%40workspace%3A."],
+            ["@near~eth/client", "workspace:packages/client"],
             ["@types/bn.js", "npm:5.1.0"],
             ["@types/node", "npm:14.14.28"],
             ["@yarnpkg/pnpify", "virtual:985d1fe85be5607492cd4856d0b81badc3e9c1907f3979bcad0ab913f3075188d47cbe46e16c0e69a2d712eabaaa84491072d64b599ef692016ad12182f75047#npm:2.4.0"],
@@ -1120,6 +1109,31 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@yarnpkg/pnpify", "npm:2.4.0"]
           ],
           "linkType": "SOFT",
+        }],
+        ["virtual:1c6a0feca60af4e6dc553e6f5226614cd69d6d43f7d8c95e9257c797f57e180cc83210d82b05d9978274cb95176414a0b979cb347a75da78fb43ee1e3a86f7b2#npm:2.4.0", {
+          "packageLocation": "./.yarn/$$virtual/@yarnpkg-pnpify-virtual-2642635f3a/0/cache/@yarnpkg-pnpify-npm-2.4.0-f9312c18ed-89bbbe7f62.zip/node_modules/@yarnpkg/pnpify/",
+          "packageDependencies": [
+            ["@yarnpkg/pnpify", "virtual:1c6a0feca60af4e6dc553e6f5226614cd69d6d43f7d8c95e9257c797f57e180cc83210d82b05d9978274cb95176414a0b979cb347a75da78fb43ee1e3a86f7b2#npm:2.4.0"],
+            ["@types/eslint", null],
+            ["@types/typescript", null],
+            ["@yarnpkg/core", "npm:2.4.0"],
+            ["@yarnpkg/fslib", "npm:2.4.0"],
+            ["@yarnpkg/parsers", "npm:2.3.0"],
+            ["chalk", "npm:3.0.0"],
+            ["clipanion", "npm:2.6.2"],
+            ["comment-json", "npm:2.4.2"],
+            ["eslint", "npm:7.20.0"],
+            ["lodash", "npm:4.17.20"],
+            ["tslib", "npm:1.14.1"],
+            ["typescript", "patch:typescript@npm%3A4.1.5#builtin<compat/typescript>::version=4.1.5&hash=cc6730"]
+          ],
+          "packagePeers": [
+            "@types/eslint",
+            "@types/typescript",
+            "eslint",
+            "typescript"
+          ],
+          "linkType": "HARD",
         }],
         ["virtual:985d1fe85be5607492cd4856d0b81badc3e9c1907f3979bcad0ab913f3075188d47cbe46e16c0e69a2d712eabaaa84491072d64b599ef692016ad12182f75047#npm:2.4.0", {
           "packageLocation": "./.yarn/$$virtual/@yarnpkg-pnpify-virtual-2dbca21c3a/0/cache/@yarnpkg-pnpify-npm-2.4.0-f9312c18ed-89bbbe7f62.zip/node_modules/@yarnpkg/pnpify/",
@@ -6270,6 +6284,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rainbow-bridge-lib-monorepo", "workspace:."],
             ["@typescript-eslint/eslint-plugin", "virtual:1c6a0feca60af4e6dc553e6f5226614cd69d6d43f7d8c95e9257c797f57e180cc83210d82b05d9978274cb95176414a0b979cb347a75da78fb43ee1e3a86f7b2#npm:4.15.1"],
             ["@typescript-eslint/parser", "virtual:1c6a0feca60af4e6dc553e6f5226614cd69d6d43f7d8c95e9257c797f57e180cc83210d82b05d9978274cb95176414a0b979cb347a75da78fb43ee1e3a86f7b2#npm:4.15.1"],
+            ["@yarnpkg/pnpify", "virtual:1c6a0feca60af4e6dc553e6f5226614cd69d6d43f7d8c95e9257c797f57e180cc83210d82b05d9978274cb95176414a0b979cb347a75da78fb43ee1e3a86f7b2#npm:2.4.0"],
             ["eslint", "npm:7.20.0"],
             ["eslint-config-standard", "virtual:1c6a0feca60af4e6dc553e6f5226614cd69d6d43f7d8c95e9257c797f57e180cc83210d82b05d9978274cb95176414a0b979cb347a75da78fb43ee1e3a86f7b2#npm:16.0.2"],
             ["eslint-import-resolver-node", "npm:0.3.4"],

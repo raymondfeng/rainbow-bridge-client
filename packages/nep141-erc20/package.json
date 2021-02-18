@@ -20,7 +20,7 @@
     "typescript": "^4.1.5"
   },
   "dependencies": {
-    "@near~eth/client": "workspace:*",
+    "@near~eth/client": "^0.1.2",
     "bs58": "^4.0.1",
     "eth-object": "near/eth-object#54e03b8aac8208cf724e206d49ffb8bdd30451d7",
     "eth-revert-reason": "^1.0.3",
