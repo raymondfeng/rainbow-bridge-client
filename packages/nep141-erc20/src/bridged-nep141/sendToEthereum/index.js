@@ -544,6 +544,9 @@ async function checkSync (transfer) {
   const { currentHeight } = await nearOnEthClient.methods.bridgeState().call()
   const nearOnEthClientBlockHeight = Number(currentHeight)
 
+  // TODO: replace finalityBlockHeight by withdrawReceiptBlockHeight
+  // recording latest finalityBlockHeight is not necessary.
+  // otherwise user needs to wait for the next relayed block for recovery
   if (nearOnEthClientBlockHeight <= finalityBlockHeight) {
     return {
       ...transfer,
